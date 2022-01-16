@@ -1,10 +1,3 @@
-var idade = 19;
+var idade = 18;
 
-if (idade >= 18 && idade <= 70){
-  console.log("Pode")
-  console.log("Qual o seu pedido?")
-}
-else{
-  console.log("Não pode")
-  console.log("Volde futuramente")
-}
+idade >= 18 ? console.log("Pode") : console.log("Não pode");

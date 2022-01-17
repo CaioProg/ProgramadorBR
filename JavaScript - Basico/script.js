@@ -1,41 +1,16 @@
-var nota1 = 6.0;
-var nota2 = 8.8;
 
-var media = (nota1 + nota2) / 2;
-var conceito = "";
+var numero = Math.random() * 100;
 
-if (media >= 8) {
+for (var i = 1; i < 5; i++) {
 
-  conceito = "Ótimo";
-  
-}
-else if( media >= 6.5) {
-
-  conceito = "Bom";
-
-} else {
-
-  conceito = "Regular";
-
+  console.log("Executando o for, pela " + i + " vez" );
 }
 
-console.log(media);
-console.log(conceito);
-
-switch(conceito){
-
-  case "Ótimo":
-    console.log("Parabéns, você é um ótimo aluno!")
-    break;
-  case "Bom":
-    console.log("Parabéns, você é quase perfeito!")
-    break;
-
-  case "Regular":
-    console.log("Estude mais um pouco!")
-    break;
-
-  default:
-    console.log("Houve algum erro ://")
-    break;
+while (numero < 90) {
+  console.log(numero);
+  numero = Math.random() * 100
 }
+
+console.log(numero);
+
+console.log("Acabou!")

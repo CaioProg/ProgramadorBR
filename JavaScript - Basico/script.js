@@ -1,10 +1,13 @@
-// var alunos = new Array("Caio", "José", "Maria", "Duda");
+function media(n1,n2) {
+  var nota1 = n1;
+  var nota2 = n2;
+  var media = (nota1 + nota2) / 2;
+  // console.log(media)
 
-var alunos = ["Caio", "José", "Maria", "Duda"];
-
-// console.log(alunos.length);
-// console.log(alunos2[2]);
-
-for (var aluno of alunos) {
-  console.log(aluno)
+  return media
 }
+
+var resultado1 = media(6,7);
+var resultado2 = media(6,15);
+
+console.log(resultado1 + " e " + resultado2)

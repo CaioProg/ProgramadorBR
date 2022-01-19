@@ -1,15 +1,25 @@
+function calcMedia(){
+  return (this.notas[0] + this.notas[1]) / 2;
+}
+
 var aluno = { 
               nome: "Caio", 
-              notas: [5.0, 6.0] 
+              notas: [5, 6],
+              
+              media: calcMedia
             }
 
-var novaProp = "sobrenome"
+var aluno1 = { 
+              nome: "João", 
+              notas: [10, 6],
+              
+              media: calcMedia
+            }
 
-aluno.matricula = 12345;
-
-aluno[novaProp] = "Silva";
 
 
-aluno.notas2 = "teste";
+console.log(aluno.nome);
+console.log(aluno.media());
 
-console.log(aluno);
+console.log(aluno1.nome);
+console.log(aluno1.media());

@@ -6,22 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
-    <style>
-        div {
-            display: inline-block;
-            padding: 20px;
-            font-size: 2rem;
-            background-color: aquamarine;
-            color: aliceblue;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Clique em mim</h1>
+<body onload="console.log('pagina completamente carregada')">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png">
+    <br>
+    <div onmouseover="onOver(this)" onmouseout="onOut(this)">Click</div>
 
-    <input  type="text" oninput="changeH1(this)">
-
-    <div onclick="hideH1()">Click</div>
-
+    <p onmouseover="onOver(this)" onmouseout="onOut(this)" >Texto teste</p>
 </body>
 </html>

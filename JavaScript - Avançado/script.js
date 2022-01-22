@@ -1,9 +1,7 @@
-function changeH1(i){
-    let h1 = document.getElementsByTagName("h1")[0]
-    h1.innerText = i.value;
+function onOver (elemento) {
+    elemento.style.backgroundColor = "red";
 }
 
-function hideH1(){
-    let h1 = document.getElementsByTagName("h1")[0]
-    h1.style.display = "none";
+function onOut (elemento) {
+    elemento.style.backgroundColor = "aquamarine";
 }

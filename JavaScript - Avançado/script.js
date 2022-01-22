@@ -1,7 +1,15 @@
-function onOver (elemento) {
-    elemento.style.backgroundColor = "red";
+
+function loaded() {
+    let t = document.getElementById("titulo");
+   // t.onclick = mudarText;
+   t.addEventListener("mouseover", mudarText)
+   t.addEventListener("mouseout", mouseout)
 }
 
-function onOut (elemento) {
-    elemento.style.backgroundColor = "aquamarine";
+function mudarText() {
+    this.innerHTML = "NOVO TEXTO";
+}
+
+function mouseout() {
+    this.innerHTML = "Mouse fora do elemento";
 }

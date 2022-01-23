@@ -1,10 +1,9 @@
-// let a = {
-//    nome: "Caio", n1: 7.3
-// }
+let pessoas = [ "Caio", "Camila", "Cawan", "Rômulo"]
 
-// localStorage.setItem("aluno", JSON.stringify(a));
+function sortear(){
+    let np = pessoas.length;
 
-let a = localStorage.getItem("aluno");
-console.log(JSON.parse(a));
+    let ns = Math.floor(Math.random() * np);
 
-localStorage.clear();
+    document.getElementById("d").innerHTML = pessoas[ns];
+}

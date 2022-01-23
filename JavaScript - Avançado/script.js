@@ -1,9 +1,19 @@
-let pessoas = [ "Caio", "Camila", "Cawan", "Rômulo"]
+var numero = 0;
 
-function sortear(){
-    let np = pessoas.length;
+var timer;
 
-    let ns = Math.floor(Math.random() * np);
+function atualizarTexto(){
+    let h = document.getElementsByTagName("h1")[0];
+    h.innerHTML += " " + numero;
+    numero++;
+}
 
-    document.getElementById("d").innerHTML = pessoas[ns];
+function iniciar(){
+  
+ timer = setTimeout(atualizarTexto, 3000);
+
+}
+
+function parar(){
+    clearTimeout(timer);
 }

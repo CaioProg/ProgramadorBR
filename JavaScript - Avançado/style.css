@@ -3,10 +3,3 @@ body {
     margin-top: 18%;
     background-color: darkslategray;
 }
-
-button {
-    background-color: rgb(73, 109, 73);
-    color: black;
-    width: 250px;
-    height: 30px;
-}

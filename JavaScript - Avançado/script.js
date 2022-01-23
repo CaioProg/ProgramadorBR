@@ -1,15 +1,10 @@
-onload = function(){
-    let nome = localStorage.getItem("nome");
-    let h1 = document.getElementById("nome");
-    h1.innerHTML = nome;
-}
+// let a = {
+//    nome: "Caio", n1: 7.3
+// }
 
-function atualizar(element) {
-    let valor = element.value;
-    console.log(valor);
+// localStorage.setItem("aluno", JSON.stringify(a));
 
-    let h1 = document.getElementById("nome");
-    h1.innerHTML = valor;
+let a = localStorage.getItem("aluno");
+console.log(JSON.parse(a));
 
-    localStorage.setItem("nome", valor);
-}
+localStorage.clear();

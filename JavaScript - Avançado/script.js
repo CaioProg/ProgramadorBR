@@ -1,19 +1,15 @@
-let a = {
-    nome: "Caio",
-    nota: "5.5"
+onload = function(){
+    let nome = localStorage.getItem("nome");
+    let h1 = document.getElementById("nome");
+    h1.innerHTML = nome;
 }
-let b = JSON.stringify(a);
 
-let a2 = '{"nome": "Maria", "nota":7.8}';
+function atualizar(element) {
+    let valor = element.value;
+    console.log(valor);
 
-let b2 = JSON.parse(a2);
+    let h1 = document.getElementById("nome");
+    h1.innerHTML = valor;
 
-console.log(a);
-console.log(b);
-
-
-console.log(a2);
-console.log(b2);
-
-console.log(b2.nota);
-console.log(b2.nome);
+    localStorage.setItem("nome", valor);
+}

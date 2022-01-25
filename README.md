@@ -9,7 +9,7 @@
         <img width="700" src="assets/f.jpg">
     </p>
     <br>
-    <a href="https://churrascometrocaio.netlify.app/" target="_blank0">
+    <a href="https://churrascometrocaio.netlify.app/" target="_blank">
         Clique para acessar o site!
     </a>
 <br>

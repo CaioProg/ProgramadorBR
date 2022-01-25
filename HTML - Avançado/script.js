@@ -1,6 +1,11 @@
 let lista = document.getElementById("lista");
 
-let num = parseInt(lista.getAttribute("num"));
+lista.dataset.n = '10';
+
+let id = parseInt(lista.dataset.id);
+console.log(id);
+
+let num = (lista.dataset.n);
 
 let conteudo = "";
 

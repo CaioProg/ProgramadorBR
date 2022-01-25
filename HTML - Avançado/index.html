@@ -11,20 +11,21 @@
 
     <div class="container">
 
-        <video class="video" src="./video/OnePiece.mp4">
+        <video id="video1" class="video" src="./video/OnePiece.mp4">
 
         </video>
 
-        <div class="controle">
-            <img class="btn" src="./images/skip-back.svg">
-            <img class="btn" src="./images/skip-forward.svg">
-            <img class="btn" src="./images/increase.svg">
-            <img class="btn" src="./images/decrease.svg">
-            <img class="btn" src="./images/play-circle.svg">
-            <img class="btn" src="./images/stop.svg">
+        <div class="controle" onmouseover="showControles(this)" onmouseout="hiddenControles(this)" >
+            <img class="btn" onclick="retroceder()" src="./images/skip-back.svg">
+            <img class="btn" onclick="avancar()" src="./images/skip-forward.svg">
+            <img class="btn" onclick="diminuir_vel()" src="./images/decrease.svg">
+            <img class="btn" onclick="aumentar_vel()" src="./images/increase.svg">
+            <img class="btn" onclick="play()" src="./images/play-circle.svg">
+            <img class="btn" onclick="stop()" src="./images/stop.svg">
         </div>
     </div>
 
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
+
 </body>
 </html>

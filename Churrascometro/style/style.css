@@ -1,14 +1,41 @@
+:root {
+    --font: 'Mochiy Pop P One', sans-serif;
+    --colorP: #FA594B;
+}
+
+body {
+    margin: 0;
+}
+
+#container-imagem {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('../images/fundo.jpg');
+    background-size: cover;
+    
+}
+
 .container{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
     max-width: 300px;
-    margin: auto;
-    background-color: aliceblue;
+    margin:auto;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
+
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity:calc(1)
 } 
 
-h1{
+h1 {
     margin-top: 0;
+    color: black;
 }
 
 input{
@@ -17,4 +44,38 @@ input{
     padding: 5px;
     box-sizing: border-box;
     margin-bottom: 10px;
+    font-family: var(--font);
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(206, 205, 205);
+    
 }
+
+input[type=text]:focus {
+    border: 3px solid rgb(255, 255, 255);
+  }
+
+#resultado{
+    color: black;
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: var(--colorP);
+    font-family: var(--font);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+}
+
+button:focus {
+    border: 1px solid rgb(255, 255, 255);
+  }

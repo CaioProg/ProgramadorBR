@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <title>Churrascometro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="container-imagem">
+        
+    </div>
     <div class="container">
         <h1>Churrascômetro</h1>
-        <input id="adultos" name="adultos" type="number" placeholder="Adultos">
-        <input id="criancas" name="criancas" type="number" placeholder="Crianças">
-        <input id="duracao" name="duracao" type="number" placeholder="Duração (h)">
+        <input id="adultos" name="adultos" type="number" placeholder="Quantidade de Adultos">
+        <input id="criancas" name="criancas" type="number" placeholder="Quantidade de Crianças">
+        <input id="duracao" name="duracao" type="number" placeholder="Duração do Churrasco (Hrs)">
         <button onclick="calcular()">Calcular</button>
-
         <div id="resultado">
             
         </div>
     </div>
+    
     <script src="./script/script.js"></script>
 </body>
 </html>

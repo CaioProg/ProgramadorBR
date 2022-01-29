@@ -20,6 +20,10 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
     opacity:calc(1); 
+    font-family: 'Merienda One', cursive;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 0.8rem;
+
 }
 
 img{
@@ -39,6 +43,7 @@ footer {
 
 }
 
-a {
+
+a  {
     color: black;
 }

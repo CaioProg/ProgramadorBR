@@ -10,7 +10,7 @@
     </p>
     <br>
     <a href="https://churrascometrocaio.netlify.app/" target="_blank">
-        Clique para acessar o site!
+       Clique para acessar o site!
     </a>
 <br>
 <br>
